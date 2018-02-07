@@ -1,0 +1,11 @@
+[package]
+name = "steemit-api"
+version = "0.0.0"
+authors = ["Thomas Heck <t@b128.net>"]
+
+[dependencies]
+websocket = { version = "0.20.2", default-features = false, features = ["async-ssl"] }
+futures = "0.1.18"
+
+[dev-dependencies]
+tokio-core = "0.1.12"
