@@ -1,0 +1,9 @@
+names = [
+	"phc",
+]
+concurrent_pins = 4
+interval_ms = 5_000
+pin_snaphash = true
+pin_spritehash = true
+pin_videohash = true
+pin_video480hash = true

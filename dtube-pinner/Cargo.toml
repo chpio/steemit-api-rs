@@ -1,20 +1,18 @@
 [package]
-name = "steemit-api"
+name = "dtube-pinner"
 version = "0.0.0"
 authors = ["Thomas Heck <t@b128.net>"]
 
 [dependencies]
+steemit-api = { path = ".." }
 futures = "0.1.18"
 tokio-core = "0.1.12"
-hyper = "0.11.17"
 serde = "1.0.27"
 serde_derive = "1.0.27"
 serde_json = "1.0.9"
-hyper-tls = "0.1.2"
+toml = "0.4.5"
+ipfs-api = "0.4.0-alpha.2"
 
-[workspace]
-members = ["dtube-pinner"]
-
-[profile.release]
-panic = "abort"
-lto = true
+[[bin]]
+name = "dtube-pinner"
+path = "main.rs"
