@@ -23,14 +23,15 @@ impl<'a> Request for &'a [&'a RequestGetDiscussionsByBlog<'a>] {
 
 #[derive(Debug, Deserialize)]
 pub struct ResponseGetDiscussionsByBlogEntry {
-    id: i32,
-    author: String,
-    permlink: String,
-    body: String,
-    json_metadata: String,
+    pub id: i32,
+    pub author: String,
+    pub permlink: String,
+    pub body: String,
+    pub json_metadata: String,
+    pub category: String,
 }
 
 #[derive(Debug, Deserialize)]
-pub struct ResponseGetDiscussionsByBlog(Vec<ResponseGetDiscussionsByBlogEntry>);
+pub struct ResponseGetDiscussionsByBlog(pub Vec<ResponseGetDiscussionsByBlogEntry>);
 
 impl Response for ResponseGetDiscussionsByBlog {}
