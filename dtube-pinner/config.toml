@@ -1,7 +1,8 @@
 names = [
 	"phc",
 ]
-concurrent_pins = 4
+concurrent_requests = 4
+concurrent_pins = 2
 interval_ms = 5_000
 pin_snaphash = true
 pin_spritehash = true
